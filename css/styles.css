@@ -146,14 +146,30 @@ header {
 .outh-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* Герой */
 .hero {
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( to right,  
+  rgba(47, 48, 58, 0.8),  
+  rgba(47, 48, 58, 0.8)),
+  url(../img/Hero_img.jpg); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+
+  
+
 }
 
 .hero-title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 30px;
+  padding-top: 200px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -163,6 +179,7 @@ header {
 }
 /* Hero-footer-button */
 .primary-button {
+  display: inline-flex;
   color: var(--white);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -170,11 +187,11 @@ header {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
 }
+
 .container {
   padding-top: 94px;
   margin-bottom: 0;
@@ -323,7 +340,7 @@ header {
 
 .social-links {
   margin-top: 16px;
-  display: inline-block;
+  display: inline-flex;
 }
 
 /* Постоянные киенты */
@@ -383,13 +400,12 @@ header {
   padding-top: 18px
   padding-bottom: 21px;
 }
-.btn-icon {
-  display: inline-block;
+.primary-button > .btn-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-color: var(--white);
-  vertical-align: middle;
+  background-image: url(../img/icon_send.svg);
+  background-size: contain;
 }
 
 .footer-position {
