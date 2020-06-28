@@ -251,6 +251,28 @@ header {
   width: 270px;
 }
 
+.advantages-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--grey);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-list .item:nth-child(1)::before {
+  background-image: url(../img/antenna_1.svg);
+}
+.advantages-list .item:nth-child(2)::before {
+  background-image: url(../img/clock_1.svg);
+}
+.advantages-list .item:nth-child(3)::before {
+  background-image: url(../img/diagram_1.svg);
+}
+.advantages-list .item:nth-child(4)::before {
+  background-image: url(../img/astronaut_1.svg);
+}
+
+
 .advantages-name {
   font-weight: 700;
   font-size: 14px;
