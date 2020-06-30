@@ -125,11 +125,13 @@ header {
 .outh-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .outh-nav .item + .item {
   margin-left: 30px;
 }
+
 
 .outh-nav .link {
   color: var(--grey-text);
@@ -158,11 +160,8 @@ color: var(--accent-color);
 
 .item-icon-smartphone:hover,
 .item-icon-smartphone:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
-
-
-
 
 .item-icon-envelope {
   display: block;
@@ -174,7 +173,7 @@ color: var(--accent-color);
 
 .item-icon-envelope:hover,
 .item-icon-envelope:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 
@@ -402,7 +401,7 @@ color: var(--accent-color);
   justify-content: center;
   margin-bottom: 24px;
 }
-
+.social-links:focus,
 .social-links:hover {
   background-color: var(--accent-color);
 }
@@ -410,9 +409,11 @@ color: var(--accent-color);
 .social-links-item {
   width: 20px;
   height: 20px;
+  fill: #AFB1B8;
 }
+.social-links-item:focus,
 .social-links-item:hover {
- fill: var(--white: #ffffff);
+ fill: var(--white);
 }
 
 /* Постоянные клиенты */
@@ -435,19 +436,25 @@ color: var(--accent-color);
   height: 90px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--grey);
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
   display: flex;
-  
 }
-
+  
+.clients-list .item:focus,
 .clients-list .item:hover {
 border: 1px solid var(--accent-color);
 fill: var(--accent-color);
 }
-
+.clients-list .clients-item {
+  fill: #AFB1B8;
+}
+.clients-list .clients-item:focus,
+.clients-list .clients-item:hover {
+  fill: var(--accent-color);
+}
 
 /* Футер */
 .adress .map {
@@ -522,8 +529,9 @@ fill: var(--accent-color);
   align-items: center;
   justify-content: center;
   margin-bottom: 56px;
+  fill: var(--white);
 }
-
+.social-links-footer:focus,
 .social-links-footer:hover {
   background-color: var(--accent-color);
 }
@@ -531,9 +539,11 @@ fill: var(--accent-color);
 .social-links-item-footer {
   width: 20px;
   height: 20px;
+  fill: var(--dark-white)
 }
-.social-links-item:hover {
- fill: var(--white: #ffffff);
+.social-links-item-footer:focus,
+.social-links-item-footer:hover {
+ fill: var(--white);
 }
 
 .sign-up {
