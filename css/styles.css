@@ -145,6 +145,13 @@ header {
   display: flex;
   align-items: center;
 }
+
+.item .link:focus,
+.item .link:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .outh-nav .link:hover,
 .outh-nav .link:focus {
 color: var(--accent-color);
@@ -416,6 +423,7 @@ color: var(--accent-color);
  fill: var(--white);
 }
 
+
 /* Постоянные клиенты */
 
 .clients-title {
@@ -442,18 +450,19 @@ color: var(--accent-color);
   justify-content: center;
   display: flex;
 }
-  
-.clients-list .item:focus,
-.clients-list .item:hover {
-border: 1px solid var(--accent-color);
-fill: var(--accent-color);
-}
+
 .clients-list .clients-item {
   fill: #AFB1B8;
+}
+.clients-list .item:focus,
+.clients-list .item:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients-list .clients-item:focus,
 .clients-list .clients-item:hover {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Футер */
