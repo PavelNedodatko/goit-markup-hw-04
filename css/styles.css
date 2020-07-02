@@ -408,8 +408,9 @@ color: var(--accent-color);
   justify-content: center;
   margin-bottom: 24px;
 }
-.social-links:focus,
-.social-links:hover {
+
+.team-list .item a:hover,
+.team-list .item a:focus {
   background-color: var(--accent-color);
 }
 
@@ -418,9 +419,10 @@ color: var(--accent-color);
   height: 20px;
   fill: #AFB1B8;
 }
-.social-links-item:focus,
-.social-links-item:hover {
- fill: var(--white);
+
+.team-list .item a:hover .social-links-item,
+.team-list .item a:focus .social-links-item {
+  fill: var(--white);
 }
 
 
@@ -454,15 +456,15 @@ color: var(--accent-color);
 .clients-list .clients-item {
   fill: #AFB1B8;
 }
-.clients-list .item:focus,
-.clients-list .item:hover {
-  fill: var(--accent-color);
+
+.clients-list .item:hover,
+.clients-list .item:focus {
   border-color: var(--accent-color);
 }
-.clients-list .clients-item:focus,
-.clients-list .clients-item:hover {
+
+.clients-list .item:hover .clients-item,
+.clients-list .item:focus .clients-item {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 /* Футер */
@@ -540,19 +542,22 @@ color: var(--accent-color);
   margin-bottom: 56px;
   fill: var(--white);
 }
-.social-links-footer:focus,
-.social-links-footer:hover {
+
+.social-invintation a:hover,
+.social-invitation a:focus {
   background-color: var(--accent-color);
 }
+
 
 .social-links-item-footer {
   width: 20px;
   height: 20px;
   fill: var(--dark-white)
 }
-.social-links-item-footer:focus,
-.social-links-item-footer:hover {
- fill: var(--white);
+
+.social-invintation a:hover .social-links-item-footer,
+.social-invitation a:focus .social-links-item-footer{
+  fill: var(--white);
 }
 
 .sign-up {
